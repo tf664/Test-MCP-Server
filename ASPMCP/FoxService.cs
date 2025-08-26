@@ -32,11 +32,11 @@ public static class FoxService
     public static string GetAsciiArt()
     {
         // Improved ASCII art
-        return @"   \
-    \_._   
-   ( o_o )  
-   /  V  \ 
-  /(     )\
-    ^^ ^^";
+        return @"
+              /^._
+,___,--~~~~--' /'~
+`~--~\ )___,)/'
+    (/\\_  (/\\_     
+        ";
     }
 }
