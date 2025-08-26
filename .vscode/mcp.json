@@ -1,0 +1,14 @@
+{
+	"servers": {
+		"aspmcp": {
+			"type": "stdio",
+			"command": "dotnet",
+			"args": [
+				"run",
+                "--project",
+                "C:/Users/til.feldkamp/Desktop/ASP MCPYT/ASPMCP/ASPMCP.csproj"
+			]
+		}
+	},
+	"inputs": []
+}
