@@ -3,6 +3,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using ModelContextProtocol.Server;
 using System.ComponentModel;
+// using ASPMCP.FoxTools; // Not needed for static tool registration, but here for clarity
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.Logging.AddConsole(consoleLogOptions =>
@@ -16,16 +17,4 @@ builder.Services
     .WithToolsFromAssembly();
 await builder.Build().RunAsync();
 
-[McpServerToolType]
-public static class ASPTools
-{
-    [McpServerTool, Description("Echoes the message back to the client.")]
-    public static string Echo(string message) => $"AHHHHHHH {message}";
-
-    [McpServerTool, Description("Get the current day of the week")]
-    public static string GetDayOfWeek()
-    {
-        var today = DateTime.Now.ToString("dddd");
-        return $"Today is the day: {today}.";
-    }
-}
+// MCP tools are now in separate files for modularity.
