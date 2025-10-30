@@ -1,3 +1,10 @@
+# Fox Test MCP Server
+
+This repo includes a MCP server regarding fox facts.
+It was created a part of a research task regarding MCP server in an enterprise CAQ-software.
+
+## Usage
+
 - Usage in VSCode Github Copilot
     
     Inside this workspace folder, also create `mcp.json` . Which tells Github Copilot that inside this repo this MCP server will be used. One can also stop and restart the server in `mcp.json` manually
@@ -15,4 +22,3 @@
       ]
     }
     ```
-The weird thing: as far as the current knowledge goes, the MCP servers are starting, when the LLM is started. The server do not to be started seperately. Moreover, when e.g. starting the server via mcp.json and then trying to use it in Claude Desktop one runs into an error
