@@ -10,9 +10,9 @@ It was created a part of a research task regarding MCP server in an enterprise C
     Inside this workspace folder, also create `mcp.json` . Which tells Github Copilot that inside this repo this MCP server will be used. One can also stop and restart the server in `mcp.json` manually
 
 - Usage in Claude Desktop
-    Inside the claude_desktop_config.json add: (THIS TOOK A LOT OF DEBUGGING)
+    Inside the claude_desktop_config.json add:
     ```json
-    "aspmcp": {
+    "foxfacts": {
       "type": "stdio",
       "command": "dotnet",
       "args": [
